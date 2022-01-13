@@ -57,8 +57,8 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state);
-    let nums = this.state.numbers.map(num => <ListGroup.Item key="num">{num}</ListGroup.Item>)
+    // console.log(this.state);
+    let nums = this.state.numbers.map(num => <ListGroup.Item key={num}>{num}</ListGroup.Item>)
     return (
       <>
         <header>
